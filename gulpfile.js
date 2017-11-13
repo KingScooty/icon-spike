@@ -23,6 +23,14 @@ gulp.task('default', function () {
                     },
                     {
                         removeComments: true
+                    },
+                    {
+                        removeDesc: true
+                    },
+                    {
+                        removeAttrs: {
+                            attrs: ['transform']
+                        }
                     }
                 ]
             }
