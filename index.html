@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .rc-icon {
+            display: inline-block;
+        }
+        .rc-icon svg {
+            width: inherit;
+            height: inherit;
+
+            fill: currentColor;
+        }
+        .icon-test {
+            color: pink;
+        }
+
+        .icon-test1,
+        .icon-test2 {
+            height: 32px;
+            width: 32px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Icon test before minification</h2>
+    <div class="icon-test">
+        <div class="rc-icon icon-test1">
+            <svg>
+                <use href="svgs/contact_fill_no_bounds.svg#icon" />
+            </svg>
+        </div>
+    </div>
+
+    <h2>Icon test after minification</h2>
+    <div class="icon-test">
+        <div class="rc-icon icon-test2">
+            <svg>
+                <use href="dest/svgs.svg#contact_fill_no_bounds" />
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
