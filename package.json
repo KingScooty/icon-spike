@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.0"
   }
